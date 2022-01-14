@@ -6,3 +6,20 @@
   display: block;
 }
 
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+body {
+  background-image: url(../img/grail.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+img {
+  width: 75%;
+}
