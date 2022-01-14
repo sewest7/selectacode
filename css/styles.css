@@ -1,4 +1,12 @@
 #concordeDiv, #bridgeKeeper, #lancelotDiv, #arthurDiv, #rabbitDiv, #grailDiv, #witchDiv, #gallahadDiv, #robinDiv, #zootDiv, #blackKnight, #godDiv, #timDiv,#niKnight, #bedevereDiv, #frenchDiv {
   display: none;
 }
+  
+#codeMatch {
+  display: none;
+}
+
+.btn {
+  display: block;
+}
 
