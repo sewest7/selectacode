@@ -3,120 +3,121 @@
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jsquery-3.6.0.js"></script>
+  <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
   <title>SELECTaCODE</title>
 </head>
 <body>
   <div class="container">
-  <h2>Welcome to the SELECTaCODE 9001</h2>
-  <p>Our state of the art language selector helps you find the right coding language by answering a few simple questions. Let's find your ultimate code style!</p>
-  <div class="form-group">
-    <label for="userName">What is your name?</label>
-    <input id="userName" class="form-control" type="test">
-  </div>
-  <div class="form-group">
-    <h6>Where did you get the coconuts?</h6>
-      <select class="form-select" id="userCoconut">
-      <option> -Choose Where- </option>
-      <option value="found">We Found Them</option>
-      <option value="matter">It Doesn't Matter</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <h6>What is your quest?</h6>
-    <select class="form-select" id="userQuest">
-      <option> -Choose Quest- </option>
-      <option value="camelot">To Go To Camelot</option>
-      <option value="seekGrail">To Seek The Grail</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <h6>What is your favorite color?</h6>
-    <select class="form-select" id="userColor">
-      <option> -Choose Color- </option>
-      <option value="colorBlue">Blue</option>
-      <option value="notBlue">Blue..no g</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <h6>What is your next question?</h6>
-    <select class="form-select" id="userQuestion">
-      <option> -Choose Question-" </option>
-      <option value="assyria">What is the capital of Assyria?</option>
-      <option value="velocity">What is the air speed velocity of an unladen swallow?</option>
-    </select>
-  </div>
-  <button type="submit">To Castle Ahhhhhh!</button>
-  </form>
+    <h2>Welcome to the SELECTaCODE 9001</h2>
+    <p>Our state of the art language selector helps you find the right coding language by answering a few simple questions. Let's find your ultimate code style!</p>
+    <form id="codeForm">
+      <div class="form-group">
+        <h6>What is your name?<h6>
+        <input id="userName" class="form-control" type="test">
+      </div>
+      <div class="form-group">
+        <h6>Where did you get the coconuts?</h6>
+        <select class="form-select" id="userCoconut">
+          <option> -Choose Where- </option>
+          <option value="found">We Found Them</option>
+          <option value="matter">It Doesn't Matter</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h6>What is your quest?</h6>
+        <select class="form-select" id="userQuest">
+          <option> -Choose Quest- </option>
+          <option value="camelot">To Go To Camelot</option>
+          <option value="seekGrail">To Seek The Grail</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h6>What is your favorite color?</h6>
+        <select class="form-select" id="userColor">
+          <option> -Choose Color- </option>
+          <option value="colorBlue">Blue</option>
+          <option value="notBlue">Blue..no g</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h6>What is your next question?</h6>
+        <select class="form-select" id="userNext">
+          <option> -Choose Question-" </option>
+          <option value="assyria">What is the capital of Assyria?</option>
+          <option value="velocity">What is the air speed velocity of an unladen swallow?</option>
+        </select>
+      </div>
+      <button type="submit">To Castle Ahhhhhh!</button>
+    </form>
+    <div id="codeMatch">
+      <div id="concordeDiv">
+        <h4>You are JavaScript!</h4>
+        <img src="img/concorde.webp">
+      </div>
+      <div id="bridgeKeeper">
+        <h4>You are C# !</h4>
+        <img src="img/bridgekeeper.webp">
+      </div>
+      <div id="lancelotDiv">
+        <h4>You are React!</h4>
+        <img src="img/lancelot.webp">
+      </div>
+      <div id="arthurDiv">
+        <h4>You are Ruby!</h4>
+        <img src="img/arthur.webp">
+      </div>
+      <div id="rabbitDiv">
+        <h4>You are Python!</h4>
+        <img src="img/rabbit.jpg">
+      </div>
+      <div id="grailDiv">
+        <h4>You are Swift!</h4>
+        <img src="img/grail.jpg">
+      </div>
+      <div id="witchDiv">
+        <h4>You are Rust!</h4>
+        <img src="img/witch.webp">
+      </div>
+      <div id="gallahadDiv">
+        <h4>You are Go!</h4>
+        <img src="img/gallahad.webp">
+      </div>
+      <div id="robinDiv">
+        <h4>You are SQL!</h4>
+        <img src="img/robin.jpg">
+      </div>
+      <div id="zootDiv">
+        <h4>You are Prolog!</h4>
+        <img src="img/zoot.jpg">
+      </div>
+      <div id="blackKnight">
+        <h4>You are PowerShell!</h4>
+        <img src="img/blackknight.webp">
+      </div>
+      <div id="godDiv">
+        <h4>You are ABC!</h4>
+        <img src="img/god.jpg">
+      </div>
+      <div id="timDiv">
+        <h4>You are Crystal!</h4>
+        <img src="img/tim.webp">
+      </div>
+      <div id="niKnight">
+        <h4>You are Icon!</h4>
+        <img src="img/ni.jpg">
+      </div>
+      <div id="bedevereDiv">
+        <h4>You are Natural!</h4>
+        <img src="img/bedevere.webp">
+      </div>
+      <div id="frenchDiv">
+        <h4>You are Groovy!</h4>
+        <img src="img/french.png">
+      </div>
+    </div>
 
-  <div id="codeStyle">
-    <div id="concorde">
-      <h4>You are JavaScript!</h4>
-      <img src="img/concorde.webp">
-    </div>
-    <div id="bridgeKeeper">
-      <h4>You are C# !</h4>
-      <img src="img/bridgekeeper.webp">
-    </div>
-    <div id="lancelot">
-      <h4>You are React!</h4>
-      <img src="img/lancelot.webp">
-    </div>
-    <div id="arthur">
-      <h4>You are Ruby!</h4>
-      <img src="img/arthur.webp">
-    </div>
-    <div id="rabbit">
-      <h4>You are Python!</h4>
-      <img src="img/rabbit.jpg">
-    </div>
-    <div id="grail">
-      <h4>You are Swift!</h4>
-      <img src="img/grail.jpg">
-    </div>
-    <div id="witch">
-      <h4>You are Rust!</h4>
-      <img src="img/witch.webp">
-    </div>
-    <div id="gallahad">
-      <h4>You are Go!</h4>
-      <img src="img/gallahad.webp">
-    </div>
-    <div id="robin">
-      <h4>You are SQL!</h4>
-      <img src="img/robin.jpg">
-    </div>
-    <div id="zoot">
-      <h4>You are Prolog!</h4>
-      <img src="img/zoot.jpg">
-    </div>
-    <div id="blackknight">
-      <h4>You are PowerShell!</h4>
-      <img src="img/blackknight.webp">
-    </div>
-    <div id="god">
-      <h4>You are ABC!</h4>
-      <img src="img/god.jpg">
-    </div>
-    <div id="tim">
-      <h4>You are Crystal!</h4>
-      <img src="img/tim.webp">
-    </div>
-    <div id="niKnight">
-      <h4>You are Icon!</h4>
-      <img src="img/ni.jpg">
-    </div>
-    <div id="bedevere">
-      <h4>You are Natural!</h4>
-      <img src="img/bedevere.webp">
-    </div>
-    <div id="french">
-      <h4>You are Groovy!</h4>
-      <img src="img/french.png">
-    </div>
-
-  
+    
   </div>
 </body>
 </html>
