@@ -1,27 +1,32 @@
 $(document).ready(function() {
   $("#codeForm").submit(function(event) {
+    event.preventDefault();
+    $("#concordeDiv").hide();
+    $("#bridgeKeeper").hide();
+    $("#lancelotDiv").hide();
+    $("#arthurDiv").hide();
+ 
 
     const userCoconut = $("select#userCoconut").val();
     const userQuest = $("select#userQuest").val();
     const userColor = $("select#userColor").val();
     const userNext = $("select#userNext").val();
 
-    const codeMatch = ("id#userNext" + "id#userQuest" + "id#userCoconut" + "id#userColor");
+    // let codeMatch === userCoconut && userColor && userNext && userQuest;
 
-    if (userCoconut === 'found' && userQuest === 'camelot' && userColor === 'colorBlue' && userNext === 'assyria') {
-      $('codeMatch' === 'concordeDiv');
-    } else if (userCoconut === 'found' && userQuest === 'camelot' && userColor === 'colorBlue' && userNext === 'velocity') {
-      $("#bridgeKeeper");
-    } else if (userCoconut === 'found' && userQuest === 'camelot' && userColor === 'notBlue' && userNext === 'velocity') {
-      $("#lancelotDiv");
+    if (userCoconut === 'found' && userQuest === 'camelot') {
+      $("#concordeDiv").toggle();
+    } else if (userCoconut === 'found' && userQuest === 'seekGrail') {
+      $("#bridgeKeeper").toggle();
+    } else if (userCoconut === 'matter' && userQuest === 'camelot') {
+      $("#lancelotDiv").toggle();
     } else {
-      $("#arthurDiv");
+      $("#arthurDiv").toggle();
     }
 
-    $("#theAnswer").text(codeMatch);
+    // $("#theAnswer").text(codeMatch);
     $("#codeMatch").show();
-
-    event.preventDefault();
+    
       
     
     // if (userCoconut === 'found' && userQuest === 'seekGrail' && userColor === 'colorBlue' && userNext === 'velocity') {
