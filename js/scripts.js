@@ -22,6 +22,8 @@ $(document).ready(function() {
       $("#arthurDiv").toggle();
     }
 
+    $(".userName").text(userName);
+
     $("#codeMatch").show();
     
   });
