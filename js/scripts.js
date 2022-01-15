@@ -23,7 +23,6 @@ $(document).ready(function() {
     }
 
     $(".userName").text(userName);
-
     $("#codeMatch").show();
     
   });
